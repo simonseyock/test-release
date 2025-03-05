@@ -29,3 +29,7 @@ jobs:
             @semantic-release/git@10
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create a GitHub release page
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: echo "publish"
