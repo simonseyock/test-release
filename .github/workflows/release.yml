@@ -10,6 +10,9 @@ jobs:
       contents: write
 
     steps:
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v4
+
       - name: Checkout sources
         uses: actions/checkout@v4
         with:
