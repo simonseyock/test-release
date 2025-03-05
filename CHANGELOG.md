@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/simonseyock/test-release/compare/v1.0.0...v1.1.0) (2025-03-05)
+
+
+### Features
+
+* G ([1b3a431](https://github.com/simonseyock/test-release/commit/1b3a4318b2d408fb89ab21eeafc3446d69ed163e))
+
 # 1.0.0 (2025-03-05)
 
 
