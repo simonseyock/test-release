@@ -3,3 +3,5 @@ v1.0.0
 fix A
 
 feat B mit BREAKING CHANGE
+
+v2.0.0
