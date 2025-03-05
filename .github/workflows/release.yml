@@ -1,6 +1,8 @@
 name: Release
 
-on: master
+on:
+  push:
+    branches: master
 
 jobs:
   publish:
