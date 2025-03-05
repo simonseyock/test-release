@@ -1,0 +1,26 @@
+name: Release
+
+on: master
+
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+        with:
+          # Disabling shallow clone is needed for correctly determining next release with semantic release
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Semantic release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: 23
+          extra_plugins: |
+            @semantic-release/changelog@6
+            @semantic-release/git@10
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
