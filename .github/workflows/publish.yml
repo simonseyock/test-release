@@ -1,0 +1,21 @@
+name: Relwase
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
+    permissions:
+      contents: write # this is needed to create the github release
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create a GitHub release page
+        uses: ncipollo/release-action@v1
+        with:
+          generateReleaseNotes: true
