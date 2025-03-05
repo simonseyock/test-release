@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/simonseyock/test-release/compare/v1.2.0...v1.2.1) (2025-03-05)
+
+
+### Bug Fixes
+
+* J ([a6efabf](https://github.com/simonseyock/test-release/commit/a6efabf542d33e2056d682cd21f0468b10771810))
+
 # [1.2.0](https://github.com/simonseyock/test-release/compare/v1.1.1...v1.2.0) (2025-03-05)
 
 
